@@ -2,6 +2,6 @@
 
 Tehnologije:
 - Angular 20
-- Boostrap 5
+- Bootstrap 5
 - FontsAwesome 7
 - Axios HTTP

@@ -1,0 +1,47 @@
+<p>signup works!</p>
+
+<div class="card login">
+    <div class="card-header">
+        Signup
+    </div>
+    <div class="card-body">
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">First name</label>
+                <input type="text" class="form-control" id="name">
+            </div>
+            <div class="mb-3">
+                <label for="lname" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="lname">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email">
+            </div>
+            <div class="mb-3">
+                <label for="tel" class="form-label">Phone number</label>
+                <input type="tel" class="form-control" id="tel">
+            </div>
+            <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password">
+            </div>
+            <div class="mb-3">
+                <label for="repeat" class="form-label">Repeat Password</label>
+                <input type="password" class="form-control" id="repeat">
+            </div>
+            <div class="mb-3">
+                <label for="repeat" class="form-label">Choose Destination</label>
+                <select class="form-select" aria-label="Default select example">
+                <option selected>Open this select menu</option>
+                @for(d of destinations(); track $index){
+                    <option [value] = "d">{{d}}</option>
+                }
+            </select>
+            </div>
+            <button type="submit" class="btn btn-primary">
+                <i class="fa-solid fa-paper-plane"></i>Submit
+            </button>
+        </form>
+    </div>
+</div>
